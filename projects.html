@@ -1,41 +1,317 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-<title>GIS Projects</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>GIS Projects | Shalom Lakew</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<h1>GIS Projects</h1>
+<header>
+    <h1>Shalom Lakew</h1>
+    <p>GIS Graduate Student | Environmental GIS | Hydrology | Remote Sensing</p>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="resume.html">Resume</a>
+    </nav>
+</header>
 
 
-<h2>Watershed Terrain and Precipitation Analysis</h2>
+<main>
 
-<p>
-San Marcos Basin, Texas.
-Used DEM analysis, ModelBuilder, zonal statistics,
-and precipitation interpolation.
-</p>
+<section class="intro">
+    <h2>GIS Projects</h2>
 
-
-<h2>Urban Land Cover Analysis</h2>
-
-<p>
-Compared land cover patterns in Baton Rouge,
-Buffalo, and Omaha using GIS.
-</p>
+    <p>
+        This portfolio highlights selected GIS projects focused on hydrology,
+        environmental analysis, land-cover mapping, and urban spatial analysis.
+        My work uses GIS to examine environmental patterns and communicate
+        spatial information through maps and geospatial analysis.
+    </p>
+</section>
 
 
-<h2>Cincinnati Park Accessibility Analysis</h2>
+<!-- PROJECT 1 -->
 
-<p>
-Used buffer analysis to evaluate access to public parks.
-</p>
+<section class="project">
+
+    <h2>1. Watershed Terrain and Precipitation Analysis</h2>
+
+    <h3>San Marcos Basin, Texas</h3>
+
+    <img
+        src="images/hydrology/san_marcos_hillshade.png"
+        alt="Hillshade terrain map of the San Marcos Basin"
+        class="project-map">
+
+    <p class="caption">
+        Terrain visualization of the San Marcos Basin using elevation and
+        hillshade analysis.
+    </p>
+
+    <h3>Project Overview</h3>
+
+    <p>
+        This project examined terrain and hydrologic characteristics of the
+        San Marcos Basin using Digital Elevation Model (DEM) data. Raster-based
+        spatial analysis was used to calculate slope, aspect, flow direction,
+        and hydrologic slope.
+    </p>
+
+    <p>
+        ArcGIS ModelBuilder was used to automate terrain-processing operations.
+        Zonal statistics were used to examine elevation characteristics across
+        subwatersheds, while Thiessen polygons and spline interpolation were
+        used to evaluate spatial variation in precipitation.
+    </p>
 
 
-<a href="index.html">Back to Home</a>
+    <h3>Precipitation Analysis</h3>
+
+    <div class="map-grid">
+
+        <figure>
+            <img
+                src="images/hydrology/san_marcos_thiessen_precipitation.png"
+                alt="Thiessen polygon precipitation analysis">
+            <figcaption>
+                Thiessen polygons were used to represent precipitation-station
+                influence areas across subwatersheds.
+            </figcaption>
+        </figure>
+
+        <figure>
+            <img
+                src="images/hydrology/san_marcos_spline_precipitation.png"
+                alt="Spline precipitation interpolation">
+            <figcaption>
+                Spline interpolation produced a continuous precipitation
+                surface for comparison with the station-based Thiessen method.
+            </figcaption>
+        </figure>
+
+    </div>
+
+    <p>
+        <strong>Skills:</strong>
+        ArcGIS Pro, DEM analysis, raster analysis, ModelBuilder,
+        zonal statistics, hydrologic analysis, Thiessen polygons,
+        spline interpolation, and terrain visualization.
+    </p>
+
+</section>
+
+
+<!-- PROJECT 2 -->
+
+<section class="project">
+
+    <h2>2. Watershed Database Development and Hydrologic Mapping</h2>
+
+    <h3>San Marcos Basin, Texas</h3>
+
+    <img
+        src="images/hydrology/san_marcos_integrated_watershed_map.png"
+        alt="Integrated watershed map of the San Marcos Basin"
+        class="project-map">
+
+    <p class="caption">
+        Integrated watershed map showing land cover, catchments, stream
+        flowlines, basin boundaries, and USGS stream gauge locations.
+    </p>
+
+    <h3>Project Overview</h3>
+
+    <p>
+        This project developed a GIS database for the San Marcos Basin by
+        integrating multiple environmental and hydrologic datasets.
+        The database included basin and subwatershed boundaries, catchments,
+        stream networks, land-cover data, and USGS stream gauge stations.
+    </p>
+
+    <p>
+        NLCD land-cover data were analyzed to examine environmental
+        characteristics of the basin. Flowlines were symbolized using mean
+        annual flow to visualize differences within the drainage network.
+    </p>
+
+
+    <h3>Stream Network</h3>
+
+    <img
+        src="images/hydrology/san_marcos_stream_network.png"
+        alt="Stream network and catchments of the San Marcos Basin"
+        class="project-map">
+
+    <p class="caption">
+        Stream flowlines and catchments illustrating drainage structure
+        and hydrologic connectivity within the basin.
+    </p>
+
+    <p>
+        <strong>Skills:</strong>
+        Geodatabase development, data integration, hydrologic mapping,
+        NLCD land-cover analysis, watershed analysis, stream-network
+        visualization, and cartographic design.
+    </p>
+
+</section>
+
+
+<!-- PROJECT 3 -->
+
+<section class="project">
+
+    <h2>3. Urban Land Cover Analysis</h2>
+
+    <p>
+        This project compared land-cover patterns in Baton Rouge, Louisiana;
+        Buffalo, New York; and Omaha, Nebraska. NLCD data were used to examine
+        differences in urban development, vegetation, wetlands, agricultural
+        land, and other land-cover classes.
+    </p>
+
+
+    <h3>Baton Rouge, Louisiana</h3>
+
+    <img
+        src="images/landcover/baton_rouge_land_cover.png"
+        alt="Land cover map of Baton Rouge Louisiana"
+        class="project-map">
+
+    <p class="caption">
+        Land-cover distribution in Baton Rouge showing developed areas,
+        vegetation, wetlands, water, and surrounding land uses.
+    </p>
+
+
+    <h3>Buffalo, New York</h3>
+
+    <img
+        src="images/landcover/buffalo_land_cover.png"
+        alt="Land cover map of Buffalo New York"
+        class="project-map">
+
+    <p class="caption">
+        Buffalo displays extensive urban development with surrounding
+        vegetation, open space, and agricultural land.
+    </p>
+
+
+    <h3>Omaha, Nebraska</h3>
+
+    <img
+        src="images/landcover/omaha_land_cover.png"
+        alt="Land cover map of Omaha Nebraska"
+        class="project-map">
+
+    <p class="caption">
+        Omaha's developed metropolitan area transitions into agricultural
+        and vegetated land surrounding the urban core.
+    </p>
+
+    <h3>Key Finding</h3>
+
+    <p>
+        The comparison demonstrates how urban form and surrounding land cover
+        differ geographically. Baton Rouge combines dense development with
+        wetlands and vegetation, Buffalo contains extensive developed land
+        around its urban core, while Omaha transitions more clearly from urban
+        development into agricultural land.
+    </p>
+
+    <p>
+        <strong>Skills:</strong>
+        NLCD land-cover analysis, environmental GIS, urban GIS,
+        comparative spatial analysis, remote-sensing interpretation,
+        and cartographic visualization.
+    </p>
+
+</section>
+
+
+<!-- PROJECT 4 -->
+
+<section class="project">
+
+    <h2>4. Cincinnati Park Accessibility Analysis</h2>
+
+    <h3>Cincinnati, Ohio</h3>
+
+    <img
+        src="images/urban/cincinnati_park_accessibility.png"
+        alt="Park accessibility analysis in Cincinnati Ohio"
+        class="project-map">
+
+    <p class="caption">
+        GIS analysis of walkable access to parks and green spaces in Cincinnati.
+    </p>
+
+    <h3>Project Overview</h3>
+
+    <p>
+        This project examined access to public parks and green spaces across
+        Cincinnati. Buffer analysis was used to represent areas within walking
+        distance of parks and to identify geographic differences in park
+        accessibility.
+    </p>
+
+    <p>
+        The analysis showed stronger access to parks in portions of central and
+        southern Cincinnati, while some outer areas showed more limited access
+        to nearby green space or pedestrian infrastructure.
+    </p>
+
+    <p>
+        <strong>Skills:</strong>
+        Buffer analysis, urban GIS, accessibility analysis,
+        spatial analysis, thematic mapping, and cartographic design.
+    </p>
+
+</section>
+
+
+<!-- FUTURE PROJECT -->
+
+<section class="project">
+
+    <h2>GIS Programming</h2>
+
+    <p>
+        Python GIS coursework is currently in progress. Programming and
+        geospatial automation projects will be added as they are completed.
+    </p>
+
+</section>
+
+</main>
+
+
+<footer>
+
+    <p>
+        Shalom Lakew | GIS Portfolio
+    </p>
+
+    <p>
+        <a href="mailto:shalom60.lakew@gmail.com">
+            Contact Me
+        </a>
+        |
+        <a href="resume.html">
+            View Resume
+        </a>
+    </p>
+
+</footer>
 
 </body>
-
 </html>
